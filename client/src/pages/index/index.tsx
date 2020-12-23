@@ -10,7 +10,13 @@ export default function Index() {
           className="item"
           url="/pages/robot/index"
         >
-          Item
+          Robot
+        </Navigator>
+        <Navigator
+          className="item"
+          url="/pages/counter/index"
+        >
+          Counter
         </Navigator>
       </View>
     </View>

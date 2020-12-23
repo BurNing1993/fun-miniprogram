@@ -2,6 +2,7 @@ export default {
   pages: [
     "pages/index/index",
     "pages/robot/index",
+    "pages/counter/index",
   ],
   window: {
     backgroundTextStyle: "light",
