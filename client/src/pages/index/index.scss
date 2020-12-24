@@ -8,6 +8,12 @@
 .items{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100rpx 100rpx;
+  grid-template-rows: 45vh
 }
-.item{}
+.item{
+  border: 1px solid #ebedf0;
+  background-color: #fff;
+  .icon{
+    width: 100%;
+  }
+}

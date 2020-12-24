@@ -1,24 +1,28 @@
+import { Action } from 'redux'
+import { ThunkAction } from 'redux-thunk'
+import { RootState } from '..'
 import {
   ADD,
-  MINUS
+  MINUS,
+  CounterActionTypes
 } from './types'
 
-export const add = () => {
+export const add = (): CounterActionTypes => {
   return {
     type: ADD
   }
 }
-export const minus = () => {
+export const minus = (): CounterActionTypes => {
   return {
     type: MINUS
   }
 }
 
 // 异步的 action
-export function asyncAdd () {
+export function asyncAdd () :ThunkAction<void,RootState,unknown,Action<any>>{
   return dispatch => {
     setTimeout(() => {
       dispatch(add())
-    }, 2000)
+    }, 1000)
   }
 }

@@ -1,5 +1,5 @@
 import  { Config } from '@tarojs/taro'
 
 export default {
-  navigationBarTitleText: "Just4Fun"
+  navigationBarTitleText: "ReduxCounter"
 } as Config

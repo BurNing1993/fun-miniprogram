@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro'
 import { Provider } from 'react-redux'
 import configStore from './store'
 import './app.scss'
+import { View } from '@tarojs/components'
 
 const store = configStore()
 
@@ -16,7 +17,7 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        {this.props.children}
+        <View id="app">{this.props.children}</View>
       </Provider>
     )
   }
