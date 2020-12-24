@@ -1,13 +1,16 @@
 import { View } from "@tarojs/components";
 import Taro, { requirePlugin } from "@tarojs/taro";
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "src/store";
 const plugin = requirePlugin("chatbot");
 
 const Robot = () => {
+  const openId = useSelector<RootState>(store=>store.user.openId)
   useEffect(() => {
     plugin.init({
       appid: "X2ouvdz4CaBfqXuKMoaRUR4vQFlALN",
-      openid: "oJT3s0CgEME8QVMhc2Nmn6N2f8-Q", // 小程序的openid，必填项
+      openid: openId, // 小程序的openid，必填项
       success: () => {},
       fail: error => {},
       guideList: ["天气","新闻","新冠肺炎新闻", "唱首歌", "讲个笑话", "你是谁"],
@@ -22,7 +25,7 @@ const Robot = () => {
         "https://res.wx.qq.com/mmspraiweb_node/dist/static/miniprogrampageImages/talk/leftHeader.png",
       userHeader:
         "https://res.wx.qq.com/mmspraiweb_node/dist/static/miniprogrampageImages/talk/rightHeader.png",
-      userName: "FF",
+      userName: "Name",
       anonymous: false,
       hideMovableButton: false
     });
