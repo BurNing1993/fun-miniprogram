@@ -13,7 +13,7 @@ const Robot = () => {
       openid: openId, // 小程序的openid，必填项
       success: () => {},
       fail: error => {},
-      guideList: ["天气","新闻","新冠肺炎新闻", "唱首歌", "讲个笑话", "你是谁"],
+      guideList: ["成都天气","新闻","新冠肺炎新闻", "唱首歌", "讲个笑话", "你是谁"],
       textToSpeech: 1,
       welcome: "您好!",
       background: "rgba(247,251,252,1)",

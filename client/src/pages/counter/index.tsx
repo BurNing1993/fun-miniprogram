@@ -4,7 +4,7 @@ import { RootState } from "../../store";
 import { View, Text, Button } from "@tarojs/components";
 import { add, minus, asyncAdd } from "../../store/counter/actions";
 
-const Counter = () => {
+const Counter:React.FC = () => {
   const counter = useSelector<RootState>(state => state.counter.num);
   const dispatch = useDispatch();
   return (

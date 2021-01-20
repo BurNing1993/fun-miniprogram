@@ -19,6 +19,10 @@ export default function Index() {
           <Image src={robot} className="icon" />
           <Text className="name">智能对话机器人</Text>
         </Navigator>
+        <Navigator className="item" url="/pages/snake/index">
+          <Image src={store} className="icon" />
+          <Text className="name">snake</Text>
+        </Navigator>
         <Navigator className="item" url="/pages/counter/index">
           <Image src={store} className="icon" />
           <Text className="name">Redux Demo</Text>

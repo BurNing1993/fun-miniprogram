@@ -2,6 +2,7 @@ export default {
   pages: [
     "pages/index/index",
     "pages/robot/index",
+    "pages/snake/index",
     "pages/counter/index",
   ],
   window: {

@@ -2,6 +2,7 @@ import { createStore, applyMiddleware, compose,combineReducers } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import counterReducer from "./counter/reducer";
 import userReducer from "./user/reducer";
+import snakeReducer from "./snake/reducer";
 
 const composeEnhancers =
   typeof window === 'object' &&
@@ -26,6 +27,7 @@ const enhancer = composeEnhancers(
 const rootReducer= combineReducers({
   counter:counterReducer,
   user:userReducer,
+  snake:snakeReducer,
 })
 
 export type RootState = ReturnType<typeof rootReducer>
