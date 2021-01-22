@@ -1,7 +1,7 @@
 {
-  "pages": ["pages/index/index", "pages/robot/index"],
+  "pages": ["pages/index/index", "pages/robot/index", "pages/snake/index"],
   "window": {
-    "navigationBarTitleText": "Demo"
+    "navigationBarTitleText": "J4FUN"
   },
   "tabBar": {
     "list": [
@@ -12,6 +12,10 @@
       {
         "pagePath": "pages/robot/index",
         "text": "机器人"
+      },
+      {
+        "pagePath": "pages/snake/index",
+        "text": "贪吃蛇"
       }
     ]
   },
